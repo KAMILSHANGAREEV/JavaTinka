@@ -1,0 +1,4 @@
+ru.tinkoff.edu.BotApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+ru.tinkoff.edu.configuration.ApplicationConfig=org.springframework.boot.context.properties.ConfigurationProperties
+ru.tinkoff.edu.controller.LinkUpdateController=org.springframework.stereotype.Component
+ru.tinkoff.edu.handler.ControllerExceptionHandler=org.springframework.stereotype.Component
