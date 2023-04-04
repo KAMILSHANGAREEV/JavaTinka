@@ -22,7 +22,7 @@ public class ScrapperApplication
         StackOverflowClient stackOverflowClient = ctx.getBean(StackOverflowClient.class);
         System.out.println(stackOverflowClient.getQuestionInfo(75771004L));
         GitHubClient gitHubClient = ctx.getBean(GitHubClient.class);
-        System.out.println(gitHubClient.getRepoInfo("MarinaBiryukova", "tinkoff-java"));
+        System.out.println(gitHubClient.getRepoInfo("KAMILSHANGAREEV", "JavaTinka"));
     }
 
     @Bean("applicationConfig")
