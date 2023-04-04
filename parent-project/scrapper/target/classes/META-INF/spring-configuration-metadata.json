@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "ru.tinkoff.edu.configuration.ApplicationConfig",
+      "sourceType": "ru.tinkoff.edu.ScrapperApplication",
+      "sourceMethod": "applicationConfig()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.scheduler",
+      "type": "ru.tinkoff.edu.configuration.Scheduler",
+      "sourceType": "ru.tinkoff.edu.configuration.ApplicationConfig"
+    },
+    {
+      "name": "app.test",
+      "type": "java.lang.String",
+      "sourceType": "ru.tinkoff.edu.configuration.ApplicationConfig"
+    }
+  ],
+  "hints": []
+}
