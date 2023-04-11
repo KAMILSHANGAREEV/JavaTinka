@@ -1,6 +1,6 @@
 # Compiled class file
 *.class
-/parent-project/migrations/pgdata/
+parent-project/migrations/pgdata/
 
 # Log file
 *.log
