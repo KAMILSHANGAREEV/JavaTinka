@@ -1,7 +1,3 @@
---liquibase formatted sql
-
---changeset MarinaBiryukova:1
-
 CREATE TABLE chat (
     id SERIAL PRIMARY KEY NOT NULL,
     tg_chat_id INTEGER NOT NULL
