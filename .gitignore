@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+/migrations/pgdata/
 
 # Log file
 *.log
