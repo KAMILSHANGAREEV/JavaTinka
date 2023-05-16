@@ -10,7 +10,9 @@
   "properties": [
     {
       "name": "app.scheduler",
+
       "type": "ru.tinkoff.edu.configuration.sheduler.Scheduler",
+
       "sourceType": "ru.tinkoff.edu.configuration.application.ApplicationConfig"
     },
     {

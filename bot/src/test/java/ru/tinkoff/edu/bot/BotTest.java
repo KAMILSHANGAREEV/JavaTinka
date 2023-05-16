@@ -36,7 +36,7 @@ public class BotTest {
     private BotProcessor botProcessor;
 
     @BeforeEach
-    public void setUp() {
+    public void set() {
         botProcessor = new BotProcessor(new ListCommand(client));
     }
 

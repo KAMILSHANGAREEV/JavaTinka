@@ -41,5 +41,6 @@ public class ControllerExceptionHandler {
                 ex.getClass().getName(),
                 ex.getMessage(),
                 Arrays.stream(ex.getStackTrace()).map(StackTraceElement::toString).collect(Collectors.toList()));
+
     }
 }
