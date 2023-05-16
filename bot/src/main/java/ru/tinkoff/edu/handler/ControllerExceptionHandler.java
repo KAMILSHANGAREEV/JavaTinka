@@ -16,7 +16,7 @@ public class ControllerExceptionHandler {
 
     @ExceptionHandler(value = {
             HttpMessageNotReadableException.class,
-            MethodArgumentNotValidException.class  // in case valid checks are added
+            MethodArgumentNotValidException.class
     })
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public ApiErrorResponse resourceNotFoundException(Exception ex) {

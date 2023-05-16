@@ -15,4 +15,5 @@ public class TgChatController {
     public void registerChat(@PathVariable("id") Long id) {
         System.out.println("Chat with id '" + id.toString() + "' was registered");
     }
+
 }

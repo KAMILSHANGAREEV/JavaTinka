@@ -27,6 +27,7 @@ public class BotApplication
                 new TrackCommand(client),
                 new UntrackCommand(client),
                 new HelpCommand());
+
     }
 
     @Bean

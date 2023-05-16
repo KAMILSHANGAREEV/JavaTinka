@@ -1,6 +1,6 @@
 ru.tinkoff.edu.ScrapperApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
 ru.tinkoff.edu.configuration.client.ClientConfiguration=org.springframework.stereotype.Component
-ru.tinkoff.edu.configuration.scheduler.LinkUpdaterScheduler=org.springframework.stereotype.Component
+ru.tinkoff.edu.configuration.sheduler.LinkUpdaterScheduler=org.springframework.stereotype.Component
 ru.tinkoff.edu.controller.LinksController=org.springframework.stereotype.Component
 ru.tinkoff.edu.controller.TgChatController=org.springframework.stereotype.Component
 ru.tinkoff.edu.handler.ControllerExceptionHandler=org.springframework.stereotype.Component

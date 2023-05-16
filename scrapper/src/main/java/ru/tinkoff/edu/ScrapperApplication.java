@@ -5,8 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import ru.tinkoff.edu.client.GitHubClient;
-import ru.tinkoff.edu.client.StackOverflowClient;
 import ru.tinkoff.edu.configuration.application.ApplicationConfig;
 
 @SpringBootApplication

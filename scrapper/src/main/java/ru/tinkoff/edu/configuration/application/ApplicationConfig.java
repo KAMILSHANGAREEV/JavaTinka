@@ -5,7 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import org.springframework.validation.annotation.Validated;
-import ru.tinkoff.edu.configuration.scheduler.Scheduler;
+import ru.tinkoff.edu.configuration.sheduler.Scheduler;
+
 
 @Getter
 @Setter

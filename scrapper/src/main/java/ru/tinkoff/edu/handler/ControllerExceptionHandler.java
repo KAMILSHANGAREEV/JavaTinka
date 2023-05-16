@@ -21,19 +21,26 @@ public class ControllerExceptionHandler {
     public ApiErrorResponse resourceNotFoundException(RuntimeException ex) {
         return new ApiErrorResponse(
                 "Resource not found",
-                "404", ex.getClass().getName(), ex.getMessage(), Arrays.stream(ex.getStackTrace()).map(StackTraceElement::toString).collect(Collectors.toList()));
+                "404",
+                ex.getClass().getName(),
+                ex.getMessage(),
+                Arrays.stream(ex.getStackTrace()).map(StackTraceElement::toString).collect(Collectors.toList()));
     }
 
     @ExceptionHandler(value = {
             MissingRequestHeaderException.class,
             HttpMessageNotReadableException.class,
             TypeMismatchException.class,
-            MethodArgumentNotValidException.class  // in case valid checks are added
+            MethodArgumentNotValidException.class
     })
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public ApiErrorResponse resourceNotFoundException(Exception ex) {
         return new ApiErrorResponse(
                 "Invalid request parameters",
-                "400", ex.getClass().getName(), ex.getMessage(), Arrays.stream(ex.getStackTrace()).map(StackTraceElement::toString).collect(Collectors.toList()));
+                "400",
+                ex.getClass().getName(),
+                ex.getMessage(),
+                Arrays.stream(ex.getStackTrace()).map(StackTraceElement::toString).collect(Collectors.toList()));
+
     }
 }

@@ -41,6 +41,20 @@ public class BotTest {
     }
 
     @Test
+    public void processInvalidCommand() {
+        Long chatId = 123456L;
+        when(update.message()).thenReturn(message);
+        when(message.text()).thenReturn("/invalid");
+        when(message.chat()).thenReturn(chat);
+        when(chat.id()).thenReturn(chatId);
+
+        SendMessage message = botProcessor.processCommand(update);
+
+        Assertions.assertEquals(chatId, message.getParameters().get("chat_id"));
+        Assertions.assertEquals("Неизвестная команда", message.getParameters().get("text"));
+    }
+
+    @Test
     public void processListCommand_fullList() throws URISyntaxException {
         Long chatId = 1234567L;
         LinkResponse link1 = new LinkResponse(1L, new URI("https://github.com/sanyarnd/tinkoff-java-course-2022/"));
